@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="陈文 - 资料文档开发工程师 | Linux运维 / 服务器硬件 / 技术文档">
+  <title>陈文 | 资料文档开发工程师</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== 星空背景 Canvas ====== -->
+  <canvas id="starfield"></canvas>
+
+  <!-- ====== 漂浮飞船 ====== -->
+  <div id="spaceship" class="spaceship">
+    <svg viewBox="0 0 80 40" fill="none">
+      <g class="ship-body">
+        <ellipse cx="30" cy="20" rx="22" ry="12" fill="rgba(77,201,246,0.18)" stroke="rgba(77,201,246,0.45)" stroke-width="1.2"/>
+        <polygon points="50,10 78,20 50,30" fill="rgba(77,201,246,0.12)" stroke="rgba(77,201,246,0.3)" stroke-width="1"/>
+        <rect x="8" y="12" width="6" height="16" rx="3" fill="rgba(77,201,246,0.2)" stroke="rgba(77,201,246,0.35)" stroke-width="0.8"/>
+        <circle cx="22" cy="20" r="3.5" fill="rgba(77,201,246,0.5)"/>
+      </g>
+      <g class="ship-trail">
+        <line x1="0" y1="20" x2="18" y2="20" stroke="rgba(77,201,246,0.2)" stroke-width="1.5" stroke-dasharray="3 4"/>
+        <line x1="0" y1="17" x2="12" y2="17" stroke="rgba(77,201,246,0.12)" stroke-width="1"/>
+        <line x1="0" y1="23" x2="14" y2="23" stroke="rgba(77,201,246,0.1)" stroke-width="0.8"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- ====== 导航栏 ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">CW</a>
+      <ul class="nav-links">
+        <li><a href="#home">关于</a></li>
+        <li><a href="#education">教育</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#internship">实习</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== 1. 头部个人简介 ====== -->
+  <section id="home" class="section hero">
+    <div class="container">
+      <div class="hero-card glass-card fade-stagger" data-delay="0">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">陈 文</h1>
+        <p class="hero-role">
+          <span class="role-tag">资料文档开发工程师</span>
+          <span class="role-sub">H3C 服务器 / 网络硬件产品线</span>
+        </p>
+        <p class="hero-bio">
+          南通大学 2026 届软件工程本科应届生，熟悉 Linux 运维、服务器硬件、TCP/IP 网络协议，具备后端开发、数据库运维、自动化脚本能力，擅长技术规范文档撰写，熟练使用各类 AI 编程工具，学习能力强，可接受长期出差，意向深耕 IT 资料开发、技术支持岗位。
+        </p>
+        <div class="hero-contact-row">
+          <span class="contact-chip">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            19517520130
+          </span>
+          <span class="contact-chip">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            1927584965@qq.com
+          </span>
+          <span class="contact-chip">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z"/></svg>
+            江苏宿迁
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 2. 教育经历 ====== -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title fade-stagger" data-delay="0">教育经历</h2>
+      <div class="edu-card glass-card fade-stagger" data-delay="1">
+        <div class="edu-header">
+          <h3>南通大学</h3>
+          <span class="edu-badge">本科</span>
+          <span class="edu-date">2022.09 - 2026.07</span>
+        </div>
+        <p class="edu-major">软件工程 专业</p>
+        <div class="edu-courses">
+          <span class="course-tag">Java 基础</span>
+          <span class="course-tag">数据结构</span>
+          <span class="course-tag">数据库原理</span>
+          <span class="course-tag">计算机网络</span>
+          <span class="course-tag">Linux 操作系统</span>
+          <span class="course-tag">Web 开发</span>
+          <span class="course-tag">操作系统</span>
+          <span class="course-tag">编译原理</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 3. 技术技能标签云 ====== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title fade-stagger" data-delay="0">技术技能</h2>
+
+      <div class="skill-group fade-stagger" data-delay="1">
+        <h3 class="skill-group-title">系统与网络</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux 常用运维命令</span>
+          <span class="skill-tag">服务器日常运维</span>
+          <span class="skill-tag">TCP/IP 四层 / 七层网络模型</span>
+          <span class="skill-tag">HTTP/DNS 协议</span>
+          <span class="skill-tag">故障排查</span>
+          <span class="skill-tag">BMC/RAID 服务器硬件基础</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-stagger" data-delay="1">
+        <h3 class="skill-group-title">数据库与中间件</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL 巡检 / 备份 / 慢查询</span>
+          <span class="skill-tag">索引优化</span>
+          <span class="skill-tag">Redis 缓存基础</span>
+          <span class="skill-tag">Navicat 运维操作</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-stagger" data-delay="1">
+        <h3 class="skill-group-title">开发 & 脚本语言</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">SpringBoot</span>
+          <span class="skill-tag">Vue2</span>
+          <span class="skill-tag">Python（Pandas/Matplotlib）</span>
+          <span class="skill-tag">Shell 脚本</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-stagger" data-delay="1">
+        <h3 class="skill-group-title">运维 & 监控工具</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Ansible 自动化</span>
+          <span class="skill-tag">Zabbix</span>
+          <span class="skill-tag">Grafana 监控</span>
+          <span class="skill-tag">Apifox 接口测试</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub Pages 部署</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-stagger" data-delay="1">
+        <h3 class="skill-group-title">AI 工具栈</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">ChatGPT</span>
+          <span class="skill-tag">通义千问</span>
+          <span class="skill-tag">DeepSeek</span>
+          <span class="skill-tag">Cursor</span>
+          <span class="skill-tag">Ollama 本地大模型</span>
+          <span class="skill-tag">AI 辅助代码与文档生成</span>
+        </div>
+      </div>
+
+      <div class="skill-group fade-stagger" data-delay="1">
+        <h3 class="skill-group-title">软实力</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">英语六级 CET-6（可阅读英文技术手册）</span>
+          <span class="skill-tag">技术文档编写</span>
+          <span class="skill-tag">跨部门对接</span>
+          <span class="skill-tag">问题排查</span>
+          <span class="skill-tag">版本文档维护</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 4. 实习经历 ====== -->
+  <section id="internship" class="section">
+    <div class="container">
+      <h2 class="section-title fade-stagger" data-delay="0">实习经历</h2>
+      <div class="internship-card glass-card fade-stagger" data-delay="1">
+        <div class="internship-header">
+          <h3>网络运维工程师（实习）</h3>
+          <span class="company-name">北京直真科技有限公司杭州分公司</span>
+          <span class="internship-date">2025.07 - 2025.09</span>
+        </div>
+        <ul class="internship-list">
+          <li>负责 Linux 服务器日常巡检（CPU / 内存 / 磁盘 IO / 网络）、系统部署与稳定性保障</li>
+          <li>使用 Python+Pandas 对运维数据统计分析，Matplotlib 生成可视化周报，为资源优化提供数据支撑</li>
+          <li>编写《数据库日常操作手册》《项目运维规范》标准化技术文档，统一操作流程，降低团队操作失误率</li>
+          <li>负责 MySQL 定期全量备份、索引修复，保障业务数据库安全稳定运行</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 5. 项目经历 ====== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title fade-stagger" data-delay="0">项目经历</h2>
+      <div class="projects-grid">
+
+        <!-- 项目 1 -->
+        <div class="project-card glass-card fade-stagger" data-delay="1">
+          <div class="project-scan-line"></div>
+          <h3 class="project-name">高校社团智能管理系统</h3>
+          <div class="project-tags-row">
+            <span class="project-tag">Vue2</span>
+            <span class="project-tag">SpringBoot</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">通义千问 API</span>
+          </div>
+          <p class="project-desc">
+            课程设计项目，开发社团、活动、报名审批、签到权限全套后台模块；接入大模型 API 实现自然语言创建活动，通过事务注解保证数据安全；独立编写 50+ 功能测试用例，Apifox 做 80-95 并发接口压测，0 故障 15 个跟踪缺陷，大幅提升活动统计效率，附带完整测试文档。
+          </p>
+        </div>
+
+        <!-- 项目 2 -->
+        <div class="project-card glass-card fade-stagger" data-delay="2">
+          <div class="project-scan-line"></div>
+          <h3 class="project-name">运维数据可视化分析平台</h3>
+          <div class="project-tags-row">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Matplotlib</span>
+            <span class="project-tag">Shell</span>
+          </div>
+          <p class="project-desc">
+            个人实践项目，搭建自动化运维数据采集与分析流水线；通过 Shell 脚本定时采集服务器 CPU、内存、磁盘指标并存入 MySQL，使用 Pandas 进行数据清洗趋势分析，Matplotlib 输出周度资源利用率变化趋势图，配套编写《运维数据分析规范》操作手册，实现数据驱动运维决策。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 6. 联系方式 & 证书 ====== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title fade-stagger" data-delay="0">联系方式 & 证书</h2>
+      <div class="contact-grid fade-stagger" data-delay="1">
+
+        <div class="contact-info glass-card">
+          <h3>与我联系</h3>
+          <a href="mailto:1927584965@qq.com" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>1927584965@qq.com</span>
+          </a>
+          <a href="https://github.com/cw1927584965" target="_blank" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <span>github.com/cw1927584965</span>
+          </a>
+          <a href="tel:19517520130" class="contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <span>19517520130</span>
+          </a>
+        </div>
+
+        <div class="certs glass-card">
+          <h3>证书</h3>
+          <div class="cert-items">
+            <div class="cert-item">
+              <span class="cert-icon">◆</span>
+              <span>大学英语六级 CET-6</span>
+            </div>
+            <div class="cert-item">
+              <span class="cert-icon">◆</span>
+              <span>人工智能训练师</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 页脚 ====== -->
+  <footer class="footer">
+    <p>&copy; 2026 陈文. All Rights Reserved. &nbsp;|&nbsp; Powered by GitHub Pages</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
